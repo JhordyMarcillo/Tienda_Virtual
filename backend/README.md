@@ -59,7 +59,7 @@ backend/
 npm install
 ```
 - **Variables de Entorno**
- Crea un archivo .env en la raíz del proyecto y configura tus variables:
+ - Crea un archivo .env en la raíz del proyecto y configura tus variables:
 
 ```text
 PORT=3000
@@ -70,11 +70,15 @@ DB_NAME=ecommerce_db
 JWT_SECRET="aBC"
 ```
 
-# Modo desarrollo (con nodemon)
-npm run dev
+- **Modo desarrollo (con nodemon)**
+```text
+- npm run dev
+```
 
-# Modo producción
-npm start
+- **Modo producción**
+```text
+- npm start
+```
 
 ## 🗄 **Base de Datos**
 El proyecto incluye un script SQL para la generación de tablas y datos semilla.
