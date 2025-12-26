@@ -118,8 +118,8 @@ El proyecto incluye un script SQL para la generación de tablas y datos semilla.
 | Método | Endpoint                     | Descripción                             |
 |------|------------------------------|-------------------------------------------|
 | POST | `/api/orders`                | Crear orden (Checkout)                    |
-| GET  | `/api/orders/my-orders`      | Historial de compras                      |
-| PUT  | `/api/orders/:id/cancel`     | Cancelar orden (si está *Pending*)        
+| GET  | `/api/orders`      | Historial de compras                      |
+| DELETE  | `/api/orders/:id`     | Cancelar orden (si está *Pending*)        
 
 ---
 
