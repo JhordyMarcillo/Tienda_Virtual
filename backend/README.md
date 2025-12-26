@@ -87,12 +87,11 @@ El proyecto incluye un script SQL para la generación de tablas y datos semilla.
 - Importa el archivo database.sql ubicado en la raíz (o ejecuta el script manualmente).
 
 - **Entidades Principales:**
-
-- **Users:** Clientes y Administradores.
-- **Products:** Inventario.
-- **Cart:** Ítems temporales.
-- **Orders:** Cabecera de pedidos.
-- **OrderItems:** Detalle histórico de pedidos.
+    - **Users:** Clientes y Administradores.
+    - **Products:** Inventario.
+    - **Cart:** Ítems temporales.
+    - **Orders:** Cabecera de pedidos.
+    - **OrderItems:** Detalle histórico de pedidos.
 
 ## 📡 Documentación de la API
 
