@@ -1,7 +1,7 @@
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const User = require('../models/user.model');
-
+const env = require('../config/env');
 
 exports.register = (req, res) => {
   const { name, email, password } = req.body;
@@ -46,7 +46,7 @@ exports.login = (req, res) => {
 
     const token = jwt.sign(
       { id: user.id, role: user.role },
-      process.env.JWT_SECRET || 'Clave_Super_Secreta_Para_JWT_6365',
+      process.env.JWT_SECRET || env.JWT_SECRET,
       { expiresIn: '2h' }
     );
 

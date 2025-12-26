@@ -1,4 +1,5 @@
 const Product = require("../models/product.model");
+const env = require('../config/env');
 
 exports.getProducts = (req, res) => {
   Product.getAll((err, products) => {

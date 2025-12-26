@@ -1,4 +1,5 @@
 const Cart = require("../models/cart.model");
+const env = require('../config/env');
 
 exports.getCart = (req, res) => {
   Cart.getByUser(req.user.id, (err, items) => {

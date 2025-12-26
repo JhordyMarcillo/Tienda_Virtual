@@ -1,4 +1,5 @@
 const User = require("../models/user.model.js");
+const env = require('../config/env');
 
 exports.getAllUsers = (req, res) => {
   User.getAll((err, users) => {

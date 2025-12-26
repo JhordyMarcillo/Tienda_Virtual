@@ -51,3 +51,77 @@ backend/
 ├── routes/         # Definición de endpoints
 ├── src/            # Entry point (app.js)
 └── package.json
+```
+
+## ⚙️ **Instalación y Configuración**
+- **Instalar dependencias**
+```text
+npm install
+```
+- **Variables de Entorno**
+ Crea un archivo .env en la raíz del proyecto y configura tus variables:
+
+```text
+PORT=3000
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=tu_contraseña
+DB_NAME=ecommerce_db
+JWT_SECRET="aBC"
+```
+
+# Modo desarrollo (con nodemon)
+npm run dev
+
+# Modo producción
+npm start
+
+## 🗄 **Base de Datos**
+El proyecto incluye un script SQL para la generación de tablas y datos semilla.
+
+- Crea una base de datos vacía en MySQL.
+- Importa el archivo database.sql ubicado en la raíz (o ejecuta el script manualmente).
+
+- **Entidades Principales:**
+
+- Users: Clientes y Administradores.
+- Products: Inventario.
+- Cart: Ítems temporales.
+- Orders: Cabecera de pedidos.
+- OrderItems: Detalle histórico de pedidos.
+
+## 📡 Documentación de la API
+
+### 🔐 Autenticación
+| Método | Endpoint              | Descripción                         | Auth |
+|------|-----------------------|-------------------------------------|------|
+| POST | `/api/auth/register`  | Registrar nuevo usuario             | ❌ |
+| POST | `/api/auth/login`     | Iniciar sesión y obtener token JWT  | ❌ |
+
+### 📦 Productos
+| Método | Endpoint          | Descripción                  | Auth |
+|------|-------------------|------------------------------|------|
+| GET  | `/api/products`   | Obtener catálogo             | ❌ |
+| POST | `/api/products`   | Crear producto (Admin)       | ✅ |
+
+### 🛒 Carrito
+| Método | Endpoint      | Descripción        | Auth |
+|------|---------------|--------------------|------|
+| GET  | `/api/cart`   | Ver mi carrito     | ✅ |
+| POST | `/api/cart`   | Agregar ítem       | ✅ |
+| DELETE | `/api/cart` | Vaciar carrito     | ✅ |
+
+### 📑 Órdenes
+| Método | Endpoint                     | Descripción                               | Auth |
+|------|------------------------------|-------------------------------------------|------|
+| POST | `/api/orders`                | Crear orden (Checkout)                    | ✅ |
+| GET  | `/api/orders/my-orders`      | Historial de compras                      | ✅ |
+| PUT  | `/api/orders/:id/cancel`     | Cancelar orden (si está *Pending*)        | ✅ |
+
+---
+
+## ✒️ Autores
+
+**Jhordy Marcillo**  
+Desarrollador Backend & Base de Datos  
+GitHub: https://github.com/JhordyMarcillo/Tienda_Virtual 

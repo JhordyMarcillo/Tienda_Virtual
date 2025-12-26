@@ -1,6 +1,7 @@
 const Order = require('../models/order.model');
 const Cart = require('../models/cart.model');
 const Product = require('../models/product.model');
+const env = require('../config/env');
 
 exports.createOrder = (req, res) => {
   const userId = req.user.id;
