@@ -88,11 +88,11 @@ El proyecto incluye un script SQL para la generación de tablas y datos semilla.
 
 - **Entidades Principales:**
 
-- Users: Clientes y Administradores.
-- Products: Inventario.
-- Cart: Ítems temporales.
-- Orders: Cabecera de pedidos.
-- OrderItems: Detalle histórico de pedidos.
+- **Users:** Clientes y Administradores.
+- **Products:** Inventario.
+- **Cart:** Ítems temporales.
+- **Orders:** Cabecera de pedidos.
+- **OrderItems:** Detalle histórico de pedidos.
 
 ## 📡 Documentación de la API
 
