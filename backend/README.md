@@ -96,34 +96,34 @@ El proyecto incluye un script SQL para la generación de tablas y datos semilla.
 ## 📡 Documentación de la API
 
 ### 🔐 Autenticación
-| Método | Endpoint              | Descripción                         | Auth |
-|------|-----------------------|-------------------------------------|------|
-| POST | `/api/auth/register`  | Registrar nuevo usuario             | ❌ |
-| POST | `/api/auth/login`     | Iniciar sesión y obtener token JWT  | ❌ |
+| Método | Endpoint              | Descripción                       |
+|------|-----------------------|-------------------------------------|
+| POST | `/api/auth/register`  | Registrar nuevo usuario             |
+| POST | `/api/auth/login`     | Iniciar sesión y obtener token JWT  |
 
 ### 📦 Productos
-| Método | Endpoint          | Descripción                  | Auth |
-|------|-------------------|------------------------------|------|
-| GET  | `/api/products`   | Obtener catálogo             | ❌ |
-| POST | `/api/products`   | Crear producto (Admin)       | ✅ |
+| Método | Endpoint          | Descripción               |
+|------|-------------------|-----------------------------|
+| GET  | `/api/products`   | Obtener catálogo            |
+| POST | `/api/products`   | Crear producto (Admin)      |
 
 ### 🛒 Carrito
-| Método | Endpoint      | Descripción        | Auth |
-|------|---------------|--------------------|------|
-| GET  | `/api/cart`   | Ver mi carrito     | ✅ |
-| POST | `/api/cart`   | Agregar ítem       | ✅ |
-| DELETE | `/api/cart` | Vaciar carrito     | ✅ |
+| Método | Endpoint      | Descripción      |
+|------|---------------|--------------------|
+| GET  | `/api/cart`   | Ver mi carrito     |
+| POST | `/api/cart`   | Agregar ítem       |
+| DELETE | `/api/cart` | Vaciar carrito     |
 
 ### 📑 Órdenes
-| Método | Endpoint                     | Descripción                               | Auth |
-|------|------------------------------|-------------------------------------------|------|
-| POST | `/api/orders`                | Crear orden (Checkout)                    | ✅ |
-| GET  | `/api/orders/my-orders`      | Historial de compras                      | ✅ |
-| PUT  | `/api/orders/:id/cancel`     | Cancelar orden (si está *Pending*)        | ✅ |
+| Método | Endpoint                     | Descripción                             |
+|------|------------------------------|-------------------------------------------|
+| POST | `/api/orders`                | Crear orden (Checkout)                    |
+| GET  | `/api/orders/my-orders`      | Historial de compras                      |
+| PUT  | `/api/orders/:id/cancel`     | Cancelar orden (si está *Pending*)        
 
 ---
 
-## ✒️ Autores
+## ✒️ Autor
 
 **Jhordy Marcillo**  
 Desarrollador Backend & Base de Datos  
